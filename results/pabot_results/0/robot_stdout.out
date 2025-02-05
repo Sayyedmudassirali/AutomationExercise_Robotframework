@@ -1,0 +1,73 @@
+==============================================================================
+Testcases                                                                     
+==============================================================================
+Test Case 1: Register New User :: Validate Functionality of NEW US...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Testing Documents\Robot Framework\WebAutomationExercise\AutomationExercise\Testcases\Testcases.robot:9
+    T:  Test Case 1: Register New User    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Testing Documents\Robot Framework\WebAutomationExercise\AutomationExercise\Testcases\Testcases.robot:14
+      Verify that ENTER ACCOUNT INFORMATION is visible    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Testing Documents\Robot Framework\WebAutomationExercise\AutomationExercise\Common\User_Keywords.robot:32
+      Element Should Be Visible    ${EnterEmailAccount}
+      |  ${EnterEmailAccount} = xpath://b[contains(text(),'Enter Account Information')] (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator 'xpath://b[contains(text(),'Enter Account Information')]' not found.
+------------------------------------------------------------------------------
+Test Case 2: Login User with CORRECT email and password :: Validat... | PASS |
+------------------------------------------------------------------------------
+Test Case 3: Login User with INCORRECT email and password :: Valid... | PASS |
+------------------------------------------------------------------------------
+Test Case 4: LOGOUT already Logged in User :: Validate LOGOUT func... | PASS |
+------------------------------------------------------------------------------
+Test Case 5: Register User with existing email :: Validate EXISTIN... | PASS |
+------------------------------------------------------------------------------
+Test Case 6: Contact Us Form - Details, verify sucess message :: V...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Testing Documents\Robot Framework\WebAutomationExercise\AutomationExercise\Testcases\Testcases.robot:54
+    T:  Test Case 6: Contact Us Form - Details, verify sucess message    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Testing Documents\Robot Framework\WebAutomationExercise\AutomationExercise\Testcases\Testcases.robot:61
+      Enter name, email, subject and message, upload File and submit    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Testing Documents\Robot Framework\WebAutomationExercise\AutomationExercise\Common\User_Keywords.robot:115
+      Choose File    ${Contactus_UploadFile}    ${Contactus_File_to_upload}
+      |  ${Contactus_UploadFile} = xpath://input[@name='upload_file'] (str)
+      |  ${Contactus_File_to_upload} = D://Testing Documents/TestAutomation/AutomationExercise/TestData/Robot-Framework-Architecture.jpg (str)
+______________________________________________________________________________
+| FAIL |
+InvalidArgumentException: Message: invalid argument: File not found : D://Testing Documents/TestAutomation/AutomationExercise/TestData/Robot-Framework-Architecture.jpg
+  (Session info: chrome=132.0.6834.160)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6BE6B02F5+28725]
+	(No symbol) [0x00007FF6BE612AE0]
+	(No symbol) [0x00007FF6BE4A510A]
+	(No symbol) [0x00007FF6BE4F1453]
+	(No symbol) [0x00007FF6BE51FFAA]
+	(No symbol) [0x00007FF6BE4EBF86]
+	(No symbol) [0x00007FF6BE5201C0]
+	(No symbol) [0x00007FF6BE540181]
+	(No symbol) [0x00007FF6BE51FD53]
+	(No symbol) [0x00007FF6BE4EA0E3]
+	(No symbol) [0x00007FF6BE4EB471]
+	GetHandleVerifier [0x00007FF6BE9DF30D+3366989]
+	GetHandleVerifier [0x00007FF6BE9F12F0+3440688]
+	GetHandleVerifier [0x00007FF6BE9E78FD+3401277]
+	GetHandleVerifier [0x00007FF6BE77AAAB+858091]
+	(No symbol) [0x00007FF6BE61E74F]
+	(No symbol) [0x00007FF6BE61A304]
+	(No symbol) [0x00007FF6BE61A49D]
+	(No symbol) [0x00007FF6BE608B69]
+	BaseThreadInitThunk [0x00007FFED11D7374+20]
+	RtlUserThreadStart [0x00007FFED1AFCC91+33]
+------------------------------------------------------------------------------
+Test Case 7: Verify Test Cases Page :: Validate Test Case page        | PASS |
+------------------------------------------------------------------------------
+Testcases                                                             | FAIL |
+7 tests, 5 passed, 2 failed
+==============================================================================
+Output:  E:\Testing Documents\Robot Framework\WebAutomationExercise\AutomationExercise\Results\pabot_results\0\output.xml
